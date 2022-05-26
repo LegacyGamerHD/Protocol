@@ -34,8 +34,8 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public class BedrockBeta {
     public static BedrockPacketCodec BETA_CODEC = BedrockPacketCodec.builder()
-            .protocolVersion(526)
-            .minecraftVersion("1.19.0.30")
+            .protocolVersion(530)
+            .minecraftVersion("1.19.10.20")
             .helper(BedrockPacketHelperBeta.INSTANCE)
             .registerPacket(LoginPacket.class, LoginSerializer_v291.INSTANCE, 1)
             .registerPacket(PlayStatusPacket.class, PlayStatusSerializer_v291.INSTANCE, 2)
